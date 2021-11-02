@@ -1,0 +1,20 @@
+void imprime(int);  /*declaro la función que realiza el procedimiento*/
+int main()          /*inicia el programa principal*/
+{
+int n=0;            /*variable del número límite que da el usuario*/
+printf("Indica el numero limite   ");   /*pido el valor de n a usuario*/
+scanf("%d", &n);    /*guardo en la variable n*/
+imprime(n);         /*llamo a la función "imprime"  */
+return 0;           /*instrucción por default porque indique int main*/
+}                   /*se termina el programa*/
+void imprime(int b) /*es la función que muestra los números*/
+{
+int a,c;            /*declarando otras dos variables locales auxiliares a, c*/
+for(a=0; a<=b; a++) /*ciclo for para indicar las filas*/
+{
+    for(c=0; c<=a; c++)      /*ciclo for para indicar que se imprima el número consecutivo a partir del 1, 1 1+1 hasta llegar a n*/
+        printf("%d\t", c);   /*imprime en pantalla*/
+ printf("\n");               /*salto de linea*/
+}
+
+}
